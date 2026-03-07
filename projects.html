@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — petty.is</title>
+  <meta name="description" content="Software development projects by Petty.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-inner">
+          <a href="/" class="site-title">petty<span>.</span>is</a>
+          <nav class="masthead-nav">
+            <a href="/">Writing</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/about.html">About</a>
+            <a href="/rss.xml">RSS</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="projects-page">
+          <header class="article-header">
+            <h1 class="article-title">Projects</h1>
+            <p class="article-subtitle">Open-source tools I'm building.</p>
+          </header>
+
+          <div class="project-grid">
+
+            <article class="project-card">
+              <div class="project-card-header">
+                <h2 class="project-card-title">
+                  <a href="https://github.com/a-petty/Atlas">Atlas</a>
+                </h2>
+                <span class="project-card-tag">Rust + Python</span>
+              </div>
+              <p class="project-card-desc">
+                A local-first semantic code intelligence engine. Builds symbol-aware
+                dependency graphs of repositories and provides optimized context
+                to LLMs and AI coding tools.
+              </p>
+              <ul class="project-card-features">
+                <li>Dual-graph architecture with PageRank scoring and optional Code Property Graph for sub-file analysis</li>
+                <li>Anchor &amp; Expand context assembly with adaptive token budgeting</li>
+                <li>Incremental updates with four-tier change classification</li>
+                <li>MCP server exposing 12 tools for Claude Code, VS Code, and other clients</li>
+              </ul>
+              <div class="project-card-tech">
+                <span>Tree-sitter</span>
+                <span>PyO3</span>
+                <span>petgraph</span>
+                <span>MCP</span>
+                <span>FastEmbed</span>
+              </div>
+              <a href="https://github.com/a-petty/Atlas" class="project-card-link">View on GitHub &rarr;</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-header">
+                <h2 class="project-card-title">
+                  <a href="https://github.com/a-petty/Cortex">Cortex</a>
+                </h2>
+                <span class="project-card-tag">Rust + Python</span>
+              </div>
+              <p class="project-card-desc">
+                A knowledge graph memory system for LLMs. Ingests natural language
+                documents — meeting notes, associate profiles, completed work — and
+                builds a persistent knowledge graph queryable via the Model Context Protocol.
+              </p>
+              <ul class="project-card-features">
+                <li>Tag-and-index architecture: an LLM extraction pipeline tags entities in document chunks and links them through co-occurrence edges</li>
+                <li>Relationships inferred at query time — the consuming LLM reads actual evidence text where entities appear together</li>
+                <li>High-performance Rust core with Python orchestration layer connected via PyO3</li>
+                <li>MCP server for integration with Claude Code, VS Code, and other clients</li>
+              </ul>
+              <div class="project-card-tech">
+                <span>petgraph</span>
+                <span>PageRank</span>
+                <span>PyO3</span>
+                <span>MCP</span>
+              </div>
+              <a href="https://github.com/a-petty/Cortex" class="project-card-link">View on GitHub &rarr;</a>
+            </article>
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <span class="footer-copy">&copy; 2026 petty.is</span>
+          <div class="footer-links">
+            <a href="https://github.com/a-petty">GitHub</a>
+            <a href="https://twitter.com/">Twitter</a>
+            <a href="/rss.xml">RSS</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
